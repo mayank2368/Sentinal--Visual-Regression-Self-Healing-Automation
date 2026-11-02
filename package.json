@@ -1,0 +1,20 @@
+{
+  "name": "sentinel-qa",
+  "version": "1.0.0",
+  "description": "Sentinel — Visual Regression & Self-Healing test automation (Playwright + AI-style locator healing)",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "app": "node app/server.js",
+    "test": "node --test tests/",
+    "test:visual": "node --test tests/visual.test.mjs",
+    "test:healing": "node --test tests/healing.test.mjs",
+    "baseline:update": "UPDATE_BASELINES=1 node --test tests/visual.test.mjs",
+    "demo": "node scripts/demo.mjs",
+    "report": "node scripts/open-report.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

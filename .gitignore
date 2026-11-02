@@ -1,0 +1,8 @@
+node_modules/
+# Generated per-environment at runtime (fonts render differently across OS):
+baselines/
+reports/
+# but keep the committed sample images under docs/
+!docs/
+npm-debug.log*
+.DS_Store
